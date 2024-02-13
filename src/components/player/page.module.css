@@ -1,0 +1,31 @@
+
+.container {
+    margin-top: 11px;
+    width: 100%;
+    position: relative;
+}
+
+.content {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 238px 210px 210px;
+}
+
+.header {
+    padding-left: 17.29%;
+    font-size: 5.625rem;
+    font-weight: 400;
+    padding-top: 90px;
+    color: #E7E7E7;
+}
+
+.image-container {
+    width: 51%;
+    position: absolute;
+    top: 0px;
+    right: 125px;
+}
+
+.img {
+    width: 100%;
+}
