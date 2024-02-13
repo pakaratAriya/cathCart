@@ -1,0 +1,9 @@
+.diagonal {
+  background-color: #936eea;
+  height: 6px;
+  width: 410px;
+  transform: rotate(-49.5deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
