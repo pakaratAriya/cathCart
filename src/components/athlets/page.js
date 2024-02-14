@@ -8,8 +8,6 @@ import imgDecClasses from "./imageDecorations.module.css";
 import PlusSign from "../shared/PlusSign";
 import SlideContent from "../shared/SlideContent";
 import { useMediaQuery } from "@mui/material";
-import { useRef } from "react";
-import Slideshow from "../shared/SlideShow";
 
 const athletData = [
   {
@@ -39,7 +37,7 @@ const athletData = [
 ];
 
 const AthletPage = () => {
-  const isMobileSize = useMediaQuery("max-width: 750px");
+  const isMobileSize = useMediaQuery("(max-width: 750px)");
   return (
     <div className={classes.container}>
       <div className={classes.header}>ATHLETES</div>
@@ -48,7 +46,7 @@ const AthletPage = () => {
           <img
             className={classes.img}
             src="/images/footballer.png"
-            alt="footballer image"
+            alt="footballer"
           />
           <DiagonalLine diagonalClasses={imgDecClasses.diagonal1} />
           <div className={classes.plus1}>
@@ -59,20 +57,20 @@ const AthletPage = () => {
           </div>
         </div>
       </div>
-      <SlideContent
+      {isMobileSize ? <SlideContent
         contents={athletData.map((data, index) => (
           <Content key={index} {...data} />
         ))}
-      />
+      /> :
       <div className={classes.content}>
         {
-          //   <SlideContent
-          //     contents={athletData.map((data, index) => (
-          //       <Content key={index} {...data} />
-          //     ))}
-          //   />
+              athletData.map((data, index) => (
+                <Content key={index} {...data} />
+              ))
+            
         }
       </div>
+    }
     </div>
   );
 };

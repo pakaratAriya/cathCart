@@ -7,6 +7,7 @@ import playerClasses3 from "./player3.module.css";
 import imgDecClasses from "./imageDecorations.module.css";
 import PlusSign from "../shared/PlusSign";
 import { useMediaQuery } from "@mui/material";
+import SlideContent from "../shared/SlideContent";
 
 const athletData = [
   {
@@ -44,7 +45,7 @@ const PlayerPage = () => {
           <img
             className={classes.img}
             src="/images/basketball.png"
-            alt="footballer image"
+            alt="basketball"
           />
           <DiagonalLine diagonalClasses={imgDecClasses.diagonal1} />
           <DiagonalLine diagonalClasses={imgDecClasses.diagonal2} />
@@ -60,11 +61,20 @@ const PlayerPage = () => {
           
         </div>
       </div>
-      {!isMobileSize && <div className={classes.content}>
-        {athletData.map((data) => (
-          <Content key={data.id} {...data} />
+      {isMobileSize ? <SlideContent
+        contents={athletData.map((data, index) => (
+          <Content key={index} {...data} />
         ))}
-      </div>}
+      /> :
+      <div className={classes.content}>
+        {
+              athletData.map((data, index) => (
+                <Content key={index} {...data} />
+              ))
+            
+        }
+      </div>
+    }
       
     </div>
   );

@@ -11,5 +11,6 @@
 @media (max-width: 750px) {
     .text {
         padding: 0 20px;
+        height: 253px;
     }
 }

@@ -35,6 +35,7 @@
         height: 0.1875rem;
         width: 10.17rem;
         transform: translateY(7.65rem) rotate(-49.5deg);
+        z-index: 1;
     }
 
     .diagonal2 {
@@ -44,5 +45,6 @@
         height: 0.1875rem;
         width: 7.3825rem;
         transform: translateY(5.55rem) translateX(-1.6rem) rotate(-49.5deg);
+        z-index: 1;
     }
 }
