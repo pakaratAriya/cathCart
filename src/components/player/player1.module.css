@@ -5,3 +5,13 @@
 .description {
     width: 45%;
 }
+
+@media (max-width: 1500px) {
+    .text {
+        padding-left: 30px;
+    }
+
+    .description {
+        width: 60%;
+    }
+}

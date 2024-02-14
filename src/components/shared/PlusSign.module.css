@@ -1,0 +1,37 @@
+.container {
+    position: relative;
+}
+
+.plus {
+    width: 15px;
+    height: 1px;
+    background-color: #5C37B7;
+    position: absolute;
+    top: 7.5px;
+    left: 7.5px;
+    border: 1px #9173E6 solid;
+    border-radius: 2px;
+}
+
+.plus:before {
+    content: "";
+    width: 1px;
+    height: 15px;
+    top: -7.5px;
+    left: 6.5px;
+    position: absolute;
+    background-color: #5C37B7;
+    border: 1px #9173E6 solid;
+    border-radius: 2px;
+}
+
+.plus:after {
+    content: "";
+    width: 15px;
+    height: 1px;
+    background-color: #5C37B7;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+

@@ -1,0 +1,48 @@
+.diagonal1 {
+    left: 18.68%;
+    top: 56.18%;
+    z-index: -1;
+}
+
+.diagonal2 {
+    top: 9.94%;
+    left: 66.69%;
+    z-index: -1;
+}
+
+.plusTransparent {
+    opacity: 0.3;
+}
+
+@media (max-width: 1500px) {
+    .diagonal1 {
+        top: 264px;
+        left: 159px;
+        height: 0.3125rem;
+        width: 17.125rem;
+        transform: translateY(14.95rem) rotate(-49.5deg);
+    }
+
+    .diagonal2 {
+        display: none;
+    }
+}
+
+@media (max-width: 750px) {
+    .diagonal1 {
+        top: 109.92px;
+        left: 49px;
+        height: 0.1875rem;
+        width: 10.17rem;
+        transform: translateY(7.65rem) rotate(-49.5deg);
+    }
+
+    .diagonal2 {
+        display: block;
+        top: 23.32px;
+        left: 225.89px;
+        height: 0.1875rem;
+        width: 7.3825rem;
+        transform: translateY(5.55rem) translateX(-1.6rem) rotate(-49.5deg);
+    }
+}
