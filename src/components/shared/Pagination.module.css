@@ -1,17 +1,17 @@
 .pagination {
-    display: flex;
-    flex-direction: row;
-    width: 54px;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  width: 54px;
+  justify-content: space-between;
 }
 
 .dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 5px;
-    background-color: #D8D8D8;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #d8d8d8;
 }
 
 .active {
-    background-color: #5C3CAF;
+  background-color: #5c3caf;
 }

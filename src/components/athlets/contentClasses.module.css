@@ -1,5 +1,5 @@
 .text {
-  padding-left: 17.29%;
+  padding-left: 50%;
 }
 
 .text-1 {
@@ -7,19 +7,11 @@
 }
 
 .text-2 {
-  background-color: #090c35;
-}
-
-.description {
-  width: 45%;
+  background-color: #5e3db3;
 }
 
 .description-2 {
   color: #ffffff;
-}
-
-.text-number-2 {
-  color: #8f6be8;
 }
 
 .underline-2 {
@@ -28,31 +20,19 @@
 
 @media (max-width: 1500px) {
   .text {
-    padding-left: 30px;
-  }
-
-  .description {
-    width: 60%;
+    padding-left: 37%;
   }
 }
 
 @media (max-width: 750px) {
   .text {
     padding: 0 20px;
-    height: 217px;
+    height: 253px;
     background-color: #f5f4f9;
   }
 
-  .description {
-    width: 100%;
-  }
-
   .description-2 {
-    background-color: #000000;
-  }
-
-  .text-number-2 {
-    background-color: #000000;
+    color: #000000;
   }
 
   .underline-2 {

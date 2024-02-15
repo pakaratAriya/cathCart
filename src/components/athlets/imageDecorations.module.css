@@ -1,26 +1,26 @@
 .diagonal1 {
-    display: none;
-    z-index: -1;
+  display: none;
+  z-index: -1;
 }
 
 @media (max-width: 1500px) {
-    .diagonal1 {
-        display: block;
-        top: 15px;
-        left: 230px;
-        height: 0.3125rem;
-        width: 17.125rem;
-        transform: translateY(12.95rem) rotate(-49.5deg);
-    }
+  .diagonal1 {
+    display: block;
+    top: 15px;
+    left: 230px;
+    height: 0.3125rem;
+    width: 17.125rem;
+    transform: translateY(12.95rem) rotate(-49.5deg);
+  }
 }
 
 @media (max-width: 750px) {
-    .diagonal1 {
-        top: 0;
-        left: 0;
-        padding: 0 auto;
-        height: 0.1875rem;
-        width: 16.6425rem;
-        transform: translateY(12.95rem) rotate(-49.5deg);
-    }
+  .diagonal1 {
+    top: 0;
+    left: 0;
+    padding: 0 auto;
+    height: 0.1875rem;
+    width: 16.6425rem;
+    transform: translateY(12.95rem) rotate(-49.5deg);
+  }
 }

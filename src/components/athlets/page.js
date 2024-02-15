@@ -1,18 +1,14 @@
-import Content from "../shared/Content";
 import classes from "./page.module.css";
-import athletClasses1 from "./athlet1.module.css";
-import athletClasses2 from "./athlet2.module.css";
-import athletClasses3 from "./athlet3.module.css";
 import DiagonalLine from "../shared/DiagonalLine";
 import imgDecClasses from "./imageDecorations.module.css";
 import PlusSign from "../shared/PlusSign";
-import SlideContent from "../shared/SlideContent";
-import { useMediaQuery } from "@mui/material";
+import contentClasses from "./contentClasses.module.css";
+import Layout from "../shared/Layout";
 
 const athletData = [
   {
     id: "athlet-1",
-    contentClasses: athletClasses1,
+    contentClasses: contentClasses,
     no: "01",
     title: "CONNECTION",
     description:
@@ -20,7 +16,7 @@ const athletData = [
   },
   {
     id: "athlet-2",
-    contentClasses: athletClasses2,
+    contentClasses: contentClasses,
     no: "02",
     title: "COLLABORATION",
     description:
@@ -28,7 +24,7 @@ const athletData = [
   },
   {
     id: "athlet-3",
-    contentClasses: athletClasses3,
+    contentClasses: contentClasses,
     no: "03",
     title: "GROWTH",
     description:
@@ -37,42 +33,30 @@ const athletData = [
 ];
 
 const AthletPage = () => {
-  const isMobileSize = useMediaQuery("(max-width: 750px)");
+  const image = (
+    <>
+      <img
+        className={classes.img}
+        src="/images/footballer.png"
+        alt="footballer"
+      />
+      <DiagonalLine diagonalClasses={imgDecClasses.diagonal1} />
+      <div className={classes.plus1}>
+        <PlusSign />
+      </div>
+      <div className={classes.plus2}>
+        <PlusSign plusClasses={imgDecClasses.plusTransparent} />
+      </div>
+    </>
+  );
+
   return (
-    <div className={classes.container}>
-      <div className={classes.header}>ATHLETES</div>
-      <div className={classes["image-container"]}>
-        <div className={classes["image-components"]}>
-          <img
-            className={classes.img}
-            src="/images/footballer.png"
-            alt="footballer"
-          />
-          <DiagonalLine diagonalClasses={imgDecClasses.diagonal1} />
-          <div className={classes.plus1}>
-            <PlusSign />
-          </div>
-          <div className={classes.plus2}>
-            <PlusSign plusClasses={imgDecClasses.plusTransparent} />
-          </div>
-        </div>
-      </div>
-      {isMobileSize ? <SlideContent
-        contents={athletData.map((data, index) => (
-          <Content key={index} {...data} />
-        ))}
-        slideNumber={athletData.length}
-      /> :
-      <div className={classes.content}>
-        {
-              athletData.map((data, index) => (
-                <Content key={index} {...data} />
-              ))
-            
-        }
-      </div>
-    }
-    </div>
+    <Layout
+      containerClasses={classes}
+      title="ATHLETES"
+      image={image}
+      contentData={athletData}
+    />
   );
 };
 export default AthletPage;

@@ -1,5 +1,6 @@
 .container {
   margin-top: 11px;
+  overflow: hidden;
 }
 
 .content {
@@ -47,25 +48,25 @@
   .container {
     margin-top: 20px;
     height: 496px;
-}
+  }
 
-.header {
+  .header {
     margin-bottom: 16px;
-}
+  }
 
-.image-container {
+  .image-container {
     height: 202px;
-}
+  }
 
-.image-components {
+  .image-components {
     width: 302px;
     height: 249px;
-}
+  }
 
   .img {
-      width: 302px;
-      height: 249px;
-      z-index: 2;
-      position: relative
+    width: 302px;
+    height: 249px;
+    z-index: 2;
+    position: relative;
   }
 }
