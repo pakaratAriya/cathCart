@@ -40,7 +40,7 @@ const AthletPage = () => {
         src="/images/footballer.png"
         alt="footballer"
       />
-      <DiagonalLine diagonalClasses={imgDecClasses.diagonal1} />
+      <DiagonalLine overrideClasses={imgDecClasses.diagonal1} desktopSize={{w: 217.7, h: 233.72, l:5}} tabletSize={{w: 217.7, h: 233.72, l:5}} mobileSize={{w: 178.89, h: 197.23, l: 3}}/>
       <div className={imgDecClasses.plus1}>
         <PlusSign />
       </div>

@@ -40,16 +40,16 @@ const PlayerPage = () => {
         alt="basketball"
       />
       <DiagonalLine
-        overridieClasses={imgDecClasses.diagonal1}
-        width={262.52}
-        height={304.12}
-        lineWidth={6}
+        overrideClasses={imgDecClasses.diagonal1}
+        desktopSize={{w: 262.52, h: 304.12, l: 6}}
+        tabletSize={{w: 178.88, h: 207.22, l: 5}}
+        mobileSize={{w: 106.35, h: 123.2, l: 3}}
       />
       <DiagonalLine
-        overridieClasses={imgDecClasses.diagonal2}
-        width={265.63}
-        height={311.16}
-        lineWidth={6}
+        overrideClasses={imgDecClasses.diagonal2}
+        desktopSize={{w: 265.63, h: 311.16, l: 6}}
+        tabletSize={{}}
+        mobileSize={{w: 76.69, h: 89.84, l: 3}}
       />
       <div className={imgDecClasses.plus1}>
         <PlusSign />

@@ -1,8 +1,5 @@
 .diagonal {
   background-color: #936eea;
-  height: 0.375rem;
-  width: 25.625rem;
   transform-origin: left;
-  transform: translateY(19.2rem) rotate(-49.5deg);
   position: absolute;
 }

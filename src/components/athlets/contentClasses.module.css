@@ -15,12 +15,16 @@
 }
 
 .underline-2 {
-  background-color: #ffffff;
+  background-color: #ffffff !important ;
 }
 
 @media (max-width: 1500px) {
   .text {
-    padding-left: 37%;
+    padding-left: 37.9%;
+  }
+
+  .description {
+    width: 92.71%;
   }
 }
 
@@ -37,5 +41,9 @@
 
   .underline-2 {
     background-color: #603ebe;
+  }
+
+  .description {
+    width: 100%;
   }
 }

@@ -10,6 +10,7 @@ const Pagination = ({ pageNumber, onClick, activeIndex }) => {
         className={`${classes.dot} ${
           activeIndex === i ? classes.active : undefined
         }`}
+        key={`pagination-${i}`}
         onClick={() => {
           onClickPageHandle(i);
         }}

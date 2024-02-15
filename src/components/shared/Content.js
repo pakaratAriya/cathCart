@@ -19,7 +19,7 @@ const Content = ({ id, contentClasses, no, title, description, index }) => {
               {no}
             </div>
             <div
-              className={`${classes.underline} ${contentClasses.underline} ${
+              className={`${classes.underline} ${
                 contentClasses[`underline-${index}`]
               }`}
             ></div>

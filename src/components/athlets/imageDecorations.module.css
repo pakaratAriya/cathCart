@@ -13,47 +13,48 @@
   display: none;
 }
 
+.diagonalTest {
+    top: 0;
+    left: 0;
+    height: 5px;
+}
+
 @media (max-width: 1500px) {
   .diagonal1 {
     display: block;
-    top: 15px;
-    left: 230px;
-    height: 0.3125rem;
-    width: 17.125rem;
-    transform: translateY(12.95rem) rotate(-49.5deg);
+    top: 18.98px;
+    left: 197.54px;
+    height: 5px;
   }
 
   .plus1 {
     display: block;
-    top: -10px;
-    left: 217px;
+    top: -10.98px;
+    left: 220.51px;
   }
 
   .plus2 {
     display: block;
-    top: -20px;
-    left: 192px;
+    top: -19px;
+    left: 199.63px;
     opacity: 30%;
   }
 }
 
 @media (max-width: 750px) {
   .diagonal1 {
-    top: 0;
-    left: 0;
-    padding: 0 auto;
-    height: 0.1875rem;
-    width: 16.6425rem;
-    transform: translateY(12.95rem) rotate(-49.5deg);
+    top: 12.91px;
+    left: -1.64px;
+    height: 3px;
   }
 
   .plus1 {
-    top: 10px;
-    left: 0px;
+    top: 20px;
+    left: 4px;
   }
 
   .plus2 {
-    top: 0px;
-    left: -20px;
+    top: 11px;
+    left: -18px;
   }
 }

@@ -16,6 +16,7 @@
   position: absolute;
   left: 29.66%;
   top: 15%;
+  z-index: -1;
 }
 
 .plus2 {
@@ -23,21 +24,21 @@
   opacity: 0.3;
   left: 31.88%;
   top: 18.07%;
+  z-index: -1;
 }
 
 .plus3 {
   position: absolute;
   top: 48.96%;
   left: 78.1%;
+  z-index: -1;
 }
 
 @media (max-width: 1500px) {
   .diagonal1 {
-    top: 264px;
+    top: 263.89px;
     left: 159px;
-    height: 0.3125rem;
-    width: 17.125rem;
-    transform: translateY(14.95rem) rotate(-49.5deg);
+    height: 5px;
   }
 
   .diagonal2 {
@@ -45,20 +46,18 @@
   }
 
   .plus1 {
-    left: 27%;
-    top: 12%;
+    left: 202px;
+    top: 72px;
   }
 
   .plus2 {
-    position: absolute;
-    left: 31.5%;
-    top: 15.5%;
+    left: 224px;
+    top: 89px;
   }
 
   .plus3 {
-    position: absolute;
-    bottom: 52%;
-    right: 22%;
+    left: 382px;
+    top: 282px;
   }
 }
 
@@ -66,19 +65,15 @@
   .diagonal1 {
     top: 109.92px;
     left: 49px;
-    height: 0.1875rem;
-    width: 10.17rem;
-    transform: translateY(7.65rem) rotate(-49.5deg);
+    height: 3px;
     z-index: 1;
   }
 
   .diagonal2 {
     display: block;
-    top: 23.32px;
-    left: 225.89px;
-    height: 0.1875rem;
-    width: 7.3825rem;
-    transform: translateY(5.55rem) translateX(-1.6rem) rotate(-49.5deg);
+    top: 24.32px;
+    left: 196.89px;
+    height: 3px;
     z-index: 1;
   }
   .plus1 {
