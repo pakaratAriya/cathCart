@@ -3,6 +3,16 @@
   z-index: -1;
 }
 
+.plus1 {
+  position: absolute;
+  display: none;
+}
+
+.plus2 {
+  position: absolute;
+  display: none;
+}
+
 @media (max-width: 1500px) {
   .diagonal1 {
     display: block;
@@ -11,6 +21,19 @@
     height: 0.3125rem;
     width: 17.125rem;
     transform: translateY(12.95rem) rotate(-49.5deg);
+  }
+
+  .plus1 {
+    display: block;
+    top: -10px;
+    left: 217px;
+  }
+
+  .plus2 {
+    display: block;
+    top: -20px;
+    left: 192px;
+    opacity: 30%;
   }
 }
 
@@ -22,5 +45,15 @@
     height: 0.1875rem;
     width: 16.6425rem;
     transform: translateY(12.95rem) rotate(-49.5deg);
+  }
+
+  .plus1 {
+    top: 10px;
+    left: 0px;
+  }
+
+  .plus2 {
+    top: 0px;
+    left: -20px;
   }
 }

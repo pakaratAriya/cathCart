@@ -41,11 +41,11 @@ const AthletPage = () => {
         alt="footballer"
       />
       <DiagonalLine diagonalClasses={imgDecClasses.diagonal1} />
-      <div className={classes.plus1}>
+      <div className={imgDecClasses.plus1}>
         <PlusSign />
       </div>
-      <div className={classes.plus2}>
-        <PlusSign plusClasses={imgDecClasses.plusTransparent} />
+      <div className={imgDecClasses.plus2}>
+        <PlusSign />
       </div>
     </>
   );

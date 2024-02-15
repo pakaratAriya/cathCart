@@ -29,16 +29,6 @@
   width: 100%;
 }
 
-.plus1 {
-  position: absolute;
-  display: none;
-}
-
-.plus2 {
-  position: absolute;
-  display: none;
-}
-
 @media (max-width: 1500px) {
   .container {
     margin-top: 50px;
@@ -51,6 +41,7 @@
   .image-container {
     top: 40px;
     left: -161px;
+    width: auto;
   }
 
   .img {
@@ -61,19 +52,6 @@
   .header {
     padding-left: 37%;
     margin-bottom: 15px;
-  }
-
-  .plus1 {
-    display: block;
-    top: -10px;
-    left: 217px;
-  }
-
-  .plus2 {
-    display: block;
-    top: -20px;
-    left: 192px;
-    opacity: 30%;
   }
 }
 
@@ -111,16 +89,5 @@
     z-index: 1;
     left: 10px;
     position: relative;
-  }
-
-  .plus1 {
-    top: 10px;
-    left: 0px;
-  }
-
-  .plus2 {
-    top: 0px;
-    left: -20px;
-    opacity: 30%;
   }
 }

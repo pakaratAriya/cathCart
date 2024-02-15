@@ -39,8 +39,18 @@ const PlayerPage = () => {
         src="/images/basketball.png"
         alt="basketball"
       />
-      <DiagonalLine diagonalClasses={imgDecClasses.diagonal1} />
-      <DiagonalLine diagonalClasses={imgDecClasses.diagonal2} />
+      <DiagonalLine
+        overridieClasses={imgDecClasses.diagonal1}
+        width={262.52}
+        height={304.12}
+        lineWidth={6}
+      />
+      <DiagonalLine
+        overridieClasses={imgDecClasses.diagonal2}
+        width={265.63}
+        height={311.16}
+        lineWidth={6}
+      />
       <div className={imgDecClasses.plus1}>
         <PlusSign />
       </div>
