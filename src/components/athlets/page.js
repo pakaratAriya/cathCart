@@ -61,6 +61,7 @@ const AthletPage = () => {
         contents={athletData.map((data, index) => (
           <Content key={index} {...data} />
         ))}
+        slideNumber={athletData.length}
       /> :
       <div className={classes.content}>
         {

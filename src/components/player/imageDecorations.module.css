@@ -10,9 +10,24 @@
     z-index: -1;
 }
 
-.plusTransparent {
+.plus1 {
+    position: absolute;
+    left: 28%;
+    top: 15%;
+  }
+  
+  .plus2 {
+    position: absolute;
     opacity: 0.3;
-}
+    left: 30.5%;
+    top: 17.5%;
+  }
+  
+  .plus3 {
+    position: absolute;
+    bottom: 52%;
+    right: 22%;
+  }
 
 @media (max-width: 1500px) {
     .diagonal1 {
@@ -25,6 +40,23 @@
 
     .diagonal2 {
         display: none;
+    }
+
+    .plus1 {
+        left: 27%;
+        top: 12%;
+    }
+      
+    .plus2 {
+      position: absolute;
+      left: 31.5%;
+      top: 15.5%;
+    }
+      
+    .plus3 {
+      position: absolute;
+      bottom: 52%;
+      right: 22%;
     }
 }
 
@@ -46,5 +78,20 @@
         width: 7.3825rem;
         transform: translateY(5.55rem) translateX(-1.6rem) rotate(-49.5deg);
         z-index: 1;
+    }
+    .plus1 {
+        top: 9px;
+        left: 71px;
+    }
+    
+    .plus2 {
+        top: 0px;
+        left: 49px;
+        opacity: 30%;
+    }
+  
+    .plus3 {
+      top: 150px;
+      left: 266px;
     }
 }

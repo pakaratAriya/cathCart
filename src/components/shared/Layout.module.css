@@ -1,0 +1,55 @@
+.container {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .content {
+    width: 100%;
+    display: grid;
+  }
+  
+  .header {
+    font-size: 5.625rem;
+    font-weight: 400;
+    color: #e7e7e7;
+  }
+  
+  .image-container {
+    position: absolute;
+  }
+  
+  .image-components {
+    position: relative;
+  }
+
+  
+  @media (max-width: 1500px) {
+    .container {
+      margin-top: 50px;
+    }
+  }
+  
+  @media (max-width: 750px) {
+    .container {
+      width: 100%;
+  }
+  
+  .header {
+      padding: 0 0 0 20px;
+      font-size: 3.125rem;
+      margin: 0;
+      color: #E7E7E7;
+  }
+  .image-container {
+      position: relative;
+      left: 0;
+      top: 0;
+      width: auto;
+  }
+  
+  .image-components {
+      margin: 0 auto;
+      position: relative
+  }
+}

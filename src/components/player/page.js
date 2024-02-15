@@ -1,4 +1,3 @@
-import Content from "../shared/Content";
 import DiagonalLine from "../shared/DiagonalLine";
 import classes from "./page.module.css";
 import playerClasses1 from "./player1.module.css";
@@ -6,10 +5,9 @@ import playerClasses2 from "./player2.module.css";
 import playerClasses3 from "./player3.module.css";
 import imgDecClasses from "./imageDecorations.module.css";
 import PlusSign from "../shared/PlusSign";
-import { useMediaQuery } from "@mui/material";
-import SlideContent from "../shared/SlideContent";
+import Layout from "../shared/Layout";
 
-const athletData = [
+const playerData = [
   {
     id: "player-1",
     contentClasses: playerClasses1,
@@ -36,12 +34,7 @@ const athletData = [
 ];
 
 const PlayerPage = () => {
-    const isMobileSize = useMediaQuery('(max-width: 750px)')
-  return (
-    <div className={classes.container}>
-        <div className={classes.header}>PLAYER</div>
-      <div className={classes["image-container"]}>
-        <div className={classes["image-components"]}>
+  const image = <>
           <img
             className={classes.img}
             src="/images/basketball.png"
@@ -49,34 +42,17 @@ const PlayerPage = () => {
           />
           <DiagonalLine diagonalClasses={imgDecClasses.diagonal1} />
           <DiagonalLine diagonalClasses={imgDecClasses.diagonal2} />
-          <div className={classes.plus1}>
+          <div className={imgDecClasses.plus1}>
             <PlusSign/>
           </div>
-          <div className={classes.plus2}>
-            <PlusSign plusClasses={imgDecClasses.plusTransparent}/>
-          </div>
-          <div className={classes.plus3}>
+          <div className={imgDecClasses.plus2}>
             <PlusSign/>
           </div>
-          
-        </div>
-      </div>
-      {isMobileSize ? <SlideContent
-        contents={athletData.map((data, index) => (
-          <Content key={index} {...data} />
-        ))}
-      /> :
-      <div className={classes.content}>
-        {
-              athletData.map((data, index) => (
-                <Content key={index} {...data} />
-              ))
-            
-        }
-      </div>
-    }
-      
-    </div>
-  );
-};
+          <div className={imgDecClasses.plus3}>
+            <PlusSign/>
+          </div>
+        </>
+  return <Layout extraClasses={classes} title="PLAYERS" image={image} contentData={playerData} />
+}
+
 export default PlayerPage;

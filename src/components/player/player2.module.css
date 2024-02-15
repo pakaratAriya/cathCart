@@ -21,6 +21,7 @@
     .text {
         padding: 0 20px;
         height: 217px;
+        background-color: #F5F4F9;
     }
     .description {
         width: 100%;

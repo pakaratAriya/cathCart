@@ -30,8 +30,18 @@
     .text {
         padding: 0 20px;
         height: 217px;
+        background-color: #F5F4F9;
     }
     .description {
         width: 100%;
+        color: #000000;
+    }
+
+    .text-number {
+        color: #000000;
+    }
+    
+    .underline { 
+        background-color: #603EBE;
     }
 }
